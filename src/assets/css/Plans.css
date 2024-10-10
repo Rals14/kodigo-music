@@ -1,0 +1,51 @@
+.plan{
+    display: flex;
+    width:70%;
+    align-items: center;
+    flex-direction: column;
+    padding: 2rem;
+    border-radius: 10px;
+    background-color: var(--cards);
+    box-shadow: 0 0 20px rgba(57, 57, 57, 0.1);
+    transition: 0.3s;
+}
+
+@media (min-width: 768px){
+    .plan{
+        width: 60%;
+    }
+    
+}
+.plan:hover{
+    transform: scale(1.01);
+}
+
+.price{
+    color: var(--secundario);
+}
+
+.plan-btn{
+    background-color: var(--principal);
+    color: var(--secundario);
+    width: 50%;
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 0.5rem;
+    cursor: pointer;
+    transition: 0.3s;
+    display: flex;
+    justify-content: center;
+}
+
+.plan-btn:hover{
+    background-color: var(--secundario);
+    color: var(--principal);
+    scale: 1.1;
+}
+
+@media (min-width: 768px){
+    .plan-btn{
+        width: 25%;
+    }
+    
+}

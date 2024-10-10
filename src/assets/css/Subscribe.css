@@ -1,0 +1,93 @@
+.main-subscribe{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    padding: 1rem;
+}
+
+.main-subscribe h2{
+    text-align: center;
+    margin-bottom: 0;
+}
+
+@media (min-width: 768px){
+    .main-subscribe{
+        margin: auto;
+        height: 82vh;
+    }
+    
+}
+
+
+.subscribeForm{
+    display: flex;
+    flex-direction: column;
+    background-color: var(--navbar);
+    border-radius: 0.5rem;
+    padding: 2rem;
+    justify-items: center;
+    align-items: center;
+    width: 75%;
+    margin: 1rem;
+}
+
+@media (min-width: 768px){
+    .subscribeForm{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        justify-items: center;
+        width: 50%;
+        gap: 1rem;
+        margin: 1rem;
+        
+    }
+    
+}
+
+.subscribeForm-label{
+    display: flex;
+    flex-direction: column;
+    font-size: 1rem;
+    color: var(--secundario);   
+}
+
+.susbscribeForm-input{
+    padding: 0.5rem;
+    border: none;
+    border-radius: 0.5rem;
+    margin: 0.5rem 0;
+}
+
+.subscribeForm-select{
+    padding: 0.5rem;
+    border: none;
+    border-radius: 0.5rem;
+    margin: 0.5rem 0;
+}
+
+.subscribeForm-btn{
+    background-color: var(--principal);
+    color: var(--secundario);
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 0.5rem;
+    cursor: pointer;
+    transition: 0.3s;
+    width: 50%;
+    margin-top: 1rem;
+}
+
+@media (min-width: 768px){
+    .subscribeForm-btn{
+        width: 10rem;
+        margin: auto;
+    }
+}
+
+.subscribeForm-btn:hover{
+    background-color: var(--secundario);
+    color: var(--principal);
+    scale: 1.1;
+}
