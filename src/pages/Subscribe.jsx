@@ -1,9 +1,10 @@
 import '../assets/css/Subscribe.css'
 import { Footer } from '../components/Footer';
 import { Navbar } from '../components/Navbar';
-import { set, useForm } from 'react-hook-form';
-import { useEffect, useState } from 'react';
+import { useForm } from 'react-hook-form';
+import { useState } from 'react';
 
+// Array of plans available
 const plans = [
     { id: 1, name: 'Free', price: 'Free' },
     { id: 2, name: 'Premium', price: 4.99 },
@@ -16,6 +17,7 @@ export const Subscribe = () => {
     const [subscribers, setSubscribers] = useState([]);
 
 
+    // Function to handle the form submission validate the data and add the new subscriber to the list
     const onSubmit = async (data) => {
 
         data.plan = plans.find((plan) => plan.id === Number(data.plan));
